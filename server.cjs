@@ -1,6 +1,6 @@
-const express = require('express');
-const fs = require('fs');
 const path = require('path');
+const fs = require('fs');
+const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -11,11 +11,7 @@ app.use(bodyParser.json());
 
 // Serve static frontend
 app.use(express.static(path.join(__dirname, 'public')));
-
-// Serve input JSON files
 app.use('/input', express.static(path.join(__dirname, 'input')));
-
-// Serve output folder (for history.json)
 app.use('/output', express.static(path.join(__dirname, 'output')));
 
 // API to save history data
