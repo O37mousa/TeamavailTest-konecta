@@ -6,11 +6,11 @@ This project is a CI/CD-enabled version of a real-world web app used to track te
 
 ## Project Structure
 
-├── ci.sh                	  	# CI automation script
-├── Dockerfile              		# Docker build instructions
-├── docker-compose.yml      # Service configuration
-├── server.cjs              		# Main Express server
-├── package.json            	# Project metadata & scripts
+- ci.sh                	  	# CI automation script
+- Dockerfile              		# Docker build instructions
+- docker-compose.yml      # Service configuration
+- server.cjs              		# Main Express server
+- package.json            	# Project metadata & scripts
 
 ---
 
@@ -126,9 +126,9 @@ This project is a CI/CD-enabled version of a real-world web app used to track te
 
     ```json
     {
-    "env": {
-        "node": true
-    }
+      "env": {
+          "node": true
+      }
     }
     ```
 
